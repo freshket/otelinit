@@ -13,12 +13,12 @@ import (
 
 func main() {
 	ctx := context.Background()
-	shutdown := otlp.Init(ctx)
+	shutdown := otelinit.Init(ctx)
 	defer shutdown(ctx)
 
     ...
 
-	ctx, span := otlp.Tracer.Start(ctx, "test span name")
+	ctx, span := otelinit.Tracer.Start(ctx, "test span name")
 	defer span.End()
 
     ...
