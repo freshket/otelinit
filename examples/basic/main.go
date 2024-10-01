@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/5ylar/otelinit"
+	"github.com/freshket/otelinit"
 )
 
 func main() {

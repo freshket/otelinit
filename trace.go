@@ -12,7 +12,7 @@ import (
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )
 
-var Tracer = otel.GetTracerProvider().Tracer("github.com/5ylar/otelinit")
+var Tracer = otel.GetTracerProvider().Tracer("github.com/freshket/otelinit")
 
 func initTrace(ctx context.Context) (ShutdownFunc, error) {
 	exporter, err := otlptrace.New(ctx, otlptracehttp.NewClient())
