@@ -1,4 +1,4 @@
-module github.com/5ylar/otelinit
+module github.com/freshket/otelinit
 
 go 1.23.1
 
